@@ -37,7 +37,7 @@ public class MovieService {
     public List<MoviesEntitiesDTO> getMovieByOriTitleOrPrimTitle(String title) {
         List<TitleBasics> res = movieRepository.findByTitle(title);
 
-        return MovieEntitiesMapper.convertTitlePrincipalEntitiesToDTO(res);
+        return MovieEntitiesMapper.convertTitlePrincipalEntitiesToDTOs(res);
     }
 
     /**
@@ -49,11 +49,29 @@ public class MovieService {
     public List<RatingDTO> getCategoryOfMoviesByRatings(String category, int limit) {
         List<TitleBasics> res = movieRepository.findByGenreOrderByRatingLimit(category, limit);
 
-        return RatingMapper.convertEntitiesToDTO(res);
+        return RatingMapper.convertEntitiesToDTOs(res);
     }
 
+    /**
+     *
+     * @param category
+     * @param year
+     * @return
+     */
     public List<RatingDTO> getMoviesByGenreAndByYear(String category, int year) {
         List<TitleBasics> res = movieRepository.findMoviesByGenreAndByYear(category, year);
+
+        return RatingMapper.convertEntitiesToDTOs(res);
+    }
+
+    /**
+     *
+     * @param category
+     * @param year
+     * @return
+     */
+    public RatingDTO getTopRatedMovieByGenreAndByYear(String category, int year) {
+        TitleBasics res = movieRepository.findTopRatedMovieByGenreAndYear(category, year);
 
         return RatingMapper.convertEntitiesToDTO(res);
     }
