@@ -34,7 +34,7 @@ public class MovieService {
      * @param title The title is the movie title that a user search.
      * @return A MoviesEntitiesDTO objects.
      */
-    public List<MoviesEntitiesDTO> getMovieByOriTitleOrPrimTitle(String title){
+    public List<MoviesEntitiesDTO> getMovieByOriTitleOrPrimTitle(String title) {
         List<TitleBasics> res = movieRepository.findByTitle(title);
 
         return MovieEntitiesMapper.convertTitlePrincipalEntitiesToDTO(res);
@@ -46,9 +46,16 @@ public class MovieService {
      * @param limit The limit number indicates the size of the return rows.
      * @return A list of RatingDTO objects.
      */
-    public List<RatingDTO> getCategoryOfMoviesByRatings(String category, int limit){
+    public List<RatingDTO> getCategoryOfMoviesByRatings(String category, int limit) {
         List<TitleBasics> res = movieRepository.findByGenreOrderByRatingLimit(category, limit);
 
         return RatingMapper.convertEntitiesToDTO(res);
     }
+
+    public List<RatingDTO> getMoviesByGenreAndByYear(String category, int year) {
+        List<TitleBasics> res = movieRepository.findMoviesByGenreAndByYear(category, year);
+
+        return RatingMapper.convertEntitiesToDTO(res);
+    }
+
 }
