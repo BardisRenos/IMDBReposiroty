@@ -15,7 +15,7 @@ public class RatingMapper {
      * @param titleBasics A list of TitleBasics objects.
      * @return A list of RatingDTOs.
      */
-    public static List<RatingDTO> convertEntitiesToDTO(List<TitleBasics>  titleBasics){
+    public static List<RatingDTO> convertEntitiesToDTOs(List<TitleBasics>  titleBasics){
         List<RatingDTO> list = new ArrayList<>();
 
         for(TitleBasics index:titleBasics){
@@ -28,5 +28,15 @@ public class RatingMapper {
         }
 
         return list;
+    }
+
+    public static RatingDTO convertEntitiesToDTO(TitleBasics titleBasics){
+        RatingDTO ratingDTO = new RatingDTO();
+
+        ratingDTO.setRating((int) (titleBasics.getRating().getNumVotes()/titleBasics.getRating().getAverageRating()));
+        ratingDTO.setNameMovie(titleBasics.getPrimaryTitle());
+        ratingDTO.setCategory(titleBasics.getGenres());
+
+        return ratingDTO;
     }
 }

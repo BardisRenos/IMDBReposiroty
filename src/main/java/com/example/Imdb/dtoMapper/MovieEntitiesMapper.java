@@ -26,7 +26,7 @@ public class MovieEntitiesMapper {
 //
 //    }
 
-    public static List<MoviesEntitiesDTO> convertTitlePrincipalEntitiesToDTO(List<TitleBasics> titleBasics){
+    public static List<MoviesEntitiesDTO> convertTitlePrincipalEntitiesToDTOs(List<TitleBasics> titleBasics){
 
         List<MoviesEntitiesDTO> moviesEntitiesDTOList = new ArrayList<>();
 //        List<TitlePrincipalDTO> titlePrincipalDTOList = new ArrayList<>();

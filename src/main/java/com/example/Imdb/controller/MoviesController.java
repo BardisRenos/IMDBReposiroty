@@ -54,9 +54,26 @@ public class MoviesController {
         return movieService.getCategoryOfMoviesByRatings(genre, limit);
     }
 
-    @GetMapping("/genre/{genre}/movie")
-    public List<RatingDTO> getRatingsByGenreAndByYear(@PathVariable(value="genre") String genre, @RequestParam(value="year") int year) {
-        return movieService.getMoviesByGenreAndByYear(genre, year);
+    /**
+     *
+     * @param category
+     * @param year
+     * @return
+     */
+    @GetMapping("/genre/{category}/movies/{year}")
+    public List<RatingDTO> getRatingsByGenreAndByYear(@PathVariable(value="category") String category, @PathVariable(value="year") int year) {
+        return movieService.getMoviesByGenreAndByYear(category, year);
+    }
+
+    /**
+     *
+     * @param category
+     * @param year
+     * @return
+     */
+    @GetMapping("/genre/{category}/movie")
+    public RatingDTO getTopRatedByGenreAndByYear(@PathVariable(value="category") String category, @RequestParam(value="year") int year) {
+        return movieService.getTopRatedMovieByGenreAndByYear(category, year);
     }
 
 }
