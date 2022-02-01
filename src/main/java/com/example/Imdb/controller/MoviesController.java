@@ -39,7 +39,7 @@ public class MoviesController {
      * @return A MoviesEntitiesDTO class.
      */
     @GetMapping("/movies")
-    public List<MoviesEntitiesDTO> getMovieByTitle(@RequestParam(value="title") String title){
+    public List<MoviesEntitiesDTO> getMovieByTitle(@RequestParam(value="title") String title) {
         return movieService.getMovieByOriTitleOrPrimTitle(title);
     }
 
@@ -50,8 +50,13 @@ public class MoviesController {
      * @return A list of RatingDTOs class.
      */
     @GetMapping("/genre/{genre}/movies")
-    public List<RatingDTO> getMovieByGenreOrderByRatingLimit(@PathVariable("genre") String genre, @RequestParam(value = "limit", defaultValue = "5") int limit){
+    public List<RatingDTO> getMovieByGenreOrderByRatingLimit(@PathVariable(value= "genre") String genre, @RequestParam(value = "limit", defaultValue = "5") int limit) {
         return movieService.getCategoryOfMoviesByRatings(genre, limit);
+    }
+
+    @GetMapping("/genre/{genre}/movie")
+    public List<RatingDTO> getRatingsByGenreAndByYear(@PathVariable(value="genre") String genre, @RequestParam(value="year") int year) {
+        return movieService.getMoviesByGenreAndByYear(genre, year);
     }
 
 }
