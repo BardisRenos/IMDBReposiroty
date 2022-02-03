@@ -42,11 +42,6 @@ public class TitleBasics {
             inverseJoinColumns = @JoinColumn(name = "nconst"))
     private List<NameBasics> people;
 
-//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-//    @JoinTable(name = "name_basics",
-//            joinColumns={ @JoinColumn(name="tconst", referencedColumnName="tconst") },
-//            inverseJoinColumns={ @JoinColumn(name="nconst", referencedColumnName="nconst", unique=true) })
-//    private List<NameBasics> names;
 
     @OneToOne
     @JoinColumn(name = "tconst")
