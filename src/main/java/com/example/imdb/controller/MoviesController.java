@@ -1,10 +1,10 @@
-package com.example.Imdb.controller;
+package com.example.imdb.controller;
 
 
-import com.example.Imdb.dal.MovieRepository;
-import com.example.Imdb.dto.MoviesEntitiesDTO;
-import com.example.Imdb.dto.RatingDTO;
-import com.example.Imdb.service.MovieService;
+import com.example.imdb.dal.MovieRepository;
+import com.example.imdb.dto.MoviesEntitiesDTO;
+import com.example.imdb.dto.RatingDTO;
+import com.example.imdb.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,4 +1,4 @@
-package com.example.Imdb;
+package com.example.imdb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

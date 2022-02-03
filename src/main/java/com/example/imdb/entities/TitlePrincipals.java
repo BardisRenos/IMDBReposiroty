@@ -1,4 +1,4 @@
-package com.example.Imdb.entities;
+package com.example.imdb.entities;
 
 
 import lombok.Data;

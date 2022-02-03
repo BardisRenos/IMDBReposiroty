@@ -1,7 +1,7 @@
-package com.example.Imdb.dtoMapper;
+package com.example.imdb.dtoMapper;
 
-import com.example.Imdb.dto.RatingDTO;
-import com.example.Imdb.entities.TitleBasics;
+import com.example.imdb.dto.RatingDTO;
+import com.example.imdb.entities.TitleBasics;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

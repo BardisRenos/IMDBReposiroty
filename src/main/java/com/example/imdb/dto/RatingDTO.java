@@ -1,4 +1,4 @@
-package com.example.Imdb.dto;
+package com.example.imdb.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

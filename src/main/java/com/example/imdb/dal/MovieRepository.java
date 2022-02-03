@@ -1,6 +1,6 @@
-package com.example.Imdb.dal;
+package com.example.imdb.dal;
 
-import com.example.Imdb.entities.TitleBasics;
+import com.example.imdb.entities.TitleBasics;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 

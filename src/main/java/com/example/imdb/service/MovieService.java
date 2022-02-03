@@ -1,11 +1,11 @@
-package com.example.Imdb.service;
+package com.example.imdb.service;
 
-import com.example.Imdb.dal.MovieRepository;
-import com.example.Imdb.dto.MoviesEntitiesDTO;
-import com.example.Imdb.dto.RatingDTO;
-import com.example.Imdb.dtoMapper.MovieEntitiesMapper;
-import com.example.Imdb.dtoMapper.RatingMapper;
-import com.example.Imdb.entities.TitleBasics;
+import com.example.imdb.dal.MovieRepository;
+import com.example.imdb.dto.MoviesEntitiesDTO;
+import com.example.imdb.dto.RatingDTO;
+import com.example.imdb.dtoMapper.MovieEntitiesMapper;
+import com.example.imdb.dtoMapper.RatingMapper;
+import com.example.imdb.entities.TitleBasics;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

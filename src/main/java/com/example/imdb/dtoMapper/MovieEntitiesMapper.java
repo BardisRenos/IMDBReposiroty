@@ -1,9 +1,9 @@
-package com.example.Imdb.dtoMapper;
+package com.example.imdb.dtoMapper;
 
-import com.example.Imdb.dto.MoviesEntitiesDTO;
-import com.example.Imdb.dto.TitlePrincipalDTO;
-import com.example.Imdb.entities.NameBasics;
-import com.example.Imdb.entities.TitleBasics;
+import com.example.imdb.dto.MoviesEntitiesDTO;
+import com.example.imdb.dto.TitlePrincipalDTO;
+import com.example.imdb.entities.NameBasics;
+import com.example.imdb.entities.TitleBasics;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
