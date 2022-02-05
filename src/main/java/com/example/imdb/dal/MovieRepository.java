@@ -50,17 +50,8 @@ public class MovieRepository {
                 .setParameter("genre", genre).setParameter("year", year).getResultList();
     }
 
-    /**
-     * Retrieve only one title by category and from a specific year
-     * @param genre
-     * @param year
-     * @return
-     */
-    public TitleBasics findTopRatedMovieByGenreAndYear(String genre, int year) {
-        return entityManager.createQuery("select p from TitleBasics p join fetch p.rating r " +
-                "where p.genres = :genre and p.startYear = :year order by r.numVotes/r.averageRating desc", TitleBasics.class)
-                .setParameter("genre", genre).setParameter("year", year).setMaxResults(1)
-                .getSingleResult();
-    }
+
+
+
 
 }
