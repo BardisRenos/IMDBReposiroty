@@ -64,16 +64,4 @@ public class MovieService {
         return RatingMapper.convertEntitiesToDTOs(res);
     }
 
-    /**
-     *
-     * @param category
-     * @param year
-     * @return
-     */
-    public RatingDTO getTopRatedMovieByGenreAndByYear(String category, int year) {
-        TitleBasics res = movieRepository.findTopRatedMovieByGenreAndYear(category, year);
-
-        return RatingMapper.convertEntitiesToDTO(res);
-    }
-
 }

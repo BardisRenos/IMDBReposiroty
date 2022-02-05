@@ -1,11 +1,14 @@
 package com.example.imdb.entities;
 
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @Entity
 @Table(name = "name_basics")
@@ -28,5 +31,11 @@ public class NameBasics {
     private String primaryProfession;
     @Column(name = "knownfortitles")
     private String knownForTitles;
+
+    @OneToMany
+    @JoinTable(name = "title_principals",
+            joinColumns = @JoinColumn(name = "nconst"),
+            inverseJoinColumns = @JoinColumn(name = "tconst"))
+    private List<TitleBasics> movies;
 
 }
