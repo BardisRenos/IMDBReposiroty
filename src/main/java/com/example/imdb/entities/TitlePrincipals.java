@@ -1,12 +1,13 @@
 package com.example.imdb.entities;
 
-
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
-@Data
+@Getter
+@Setter
 @Entity
 @Table(name = "title_principals")
 @NoArgsConstructor

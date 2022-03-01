@@ -1,4 +1,4 @@
-package com.example.imdb.dal;
+package com.example.imdb.dao;
 
 import com.example.imdb.entities.TitleBasics;
 import lombok.RequiredArgsConstructor;

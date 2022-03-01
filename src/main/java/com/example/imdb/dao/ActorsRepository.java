@@ -1,4 +1,4 @@
-package com.example.imdb.dal;
+package com.example.imdb.dao;
 
 import com.example.imdb.entities.NameBasics;
 import lombok.RequiredArgsConstructor;
@@ -38,6 +38,14 @@ public class ActorsRepository {
         allMovies.add(q2.getSingleResult());
 
         return allMovies;
-
     }
+
+    public List<NameBasics> findByPrimaryName(String primaryName) {
+        TypedQuery<NameBasics> q = entityManager.createNamedQuery("Name.findByPrimaryName", NameBasics.class);
+        q.setParameter("input", primaryName);
+        return q.getResultList();
+    }
+
+
+
 }

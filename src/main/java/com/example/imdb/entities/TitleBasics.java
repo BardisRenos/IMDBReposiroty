@@ -10,7 +10,6 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "title_basics")
-@ToString
 public class TitleBasics {
 
     /**
