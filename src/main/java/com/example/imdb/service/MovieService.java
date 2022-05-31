@@ -6,7 +6,7 @@ import com.example.imdb.dto.RatingDTO;
 import com.example.imdb.dtoMapper.MovieEntitiesMapper;
 import com.example.imdb.dtoMapper.RatingMapper;
 import com.example.imdb.entities.TitleBasics;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,19 +15,11 @@ import java.util.List;
  * Movie service layer.
  */
 @Service
+@RequiredArgsConstructor
 public class MovieService {
 
 
     private final MovieRepository movieRepository;
-
-    /**
-     * MovieService Constructor
-     * @param movieRepository MovieRepository
-     */
-    @Autowired
-    public MovieService(MovieRepository movieRepository) {
-        this.movieRepository = movieRepository;
-    }
 
     /**
      * This method return a movie by a given title. Also, has the cast of each one of them.

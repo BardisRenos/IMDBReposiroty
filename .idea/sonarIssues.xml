@@ -68,12 +68,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/.idea/modules.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/pom.xml">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/example/imdb/ImdbApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/example/imdb/advice/LoggingAspect.java">
           <value>
             <set />
           </value>
@@ -104,6 +114,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/example/imdb/dao/ActorsRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/example/imdb/dao/MovieRepository.java">
           <value>
             <set />
           </value>
@@ -244,6 +259,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/test/java/com/example/imdb/serviceTest/MovieServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Weibis Application/WeibisWeb/src/main/java/com/example/WeibisWeb/advice/LoggingAdviceController.java">
           <value>
             <set />
           </value>

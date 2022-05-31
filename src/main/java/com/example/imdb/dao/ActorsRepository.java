@@ -14,10 +14,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ActorsRepository {
 
-
     @PersistenceContext
     private final EntityManager entityManager;
-
 
     public List<NameBasics> findMoviesByActor(String actor1, String actor2) {
         TypedQuery<NameBasics> q1 = entityManager.createQuery("select p from NameBasics p join fetch p.movies r " +
