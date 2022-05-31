@@ -1,5 +1,6 @@
 package com.example.imdb.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -36,12 +37,12 @@ public class TitleBasics {
     @Column(name = "genres")
     private String genres;
 
+    @JsonIgnore
     @ManyToMany
     @JoinTable(name = "title_principals",
             joinColumns = @JoinColumn(name = "tconst"),
             inverseJoinColumns = @JoinColumn(name = "nconst"))
     private List<NameBasics> people;
-
 
     @OneToOne
     @JoinColumn(name = "tconst")

@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.example.imdb.serviceTest.MovieServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.321 s <<< FAILURE! - in com.example.imdb.serviceTest.MovieServiceTest
+com.example.imdb.serviceTest.MovieServiceTest  Time elapsed: 0.32 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/testcontainers/containers/wait/LogMessageWaitStrategy
+	at com.example.imdb.serviceTest.MovieServiceTest.<clinit>(MovieServiceTest.java:22)
+Caused by: java.lang.ClassNotFoundException: org.testcontainers.containers.wait.LogMessageWaitStrategy
+	at com.example.imdb.serviceTest.MovieServiceTest.<clinit>(MovieServiceTest.java:22)
+
