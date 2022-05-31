@@ -1,10 +1,4 @@
 
-a
-1src/main/java/com/example/imdb/dto/RatingDTO.java,2/9/29c0dd1a06262f98f9b6eaa298a9252580a690f6
-o
-?src/main/java/com/example/imdb/dto/ActorsMoviesEntitiesDTO.java,4/3/43a5b1ba90a846e10416c5bb033e7348e157e7ab
-j
-:src/main/java/com/example/imdb/dtoMapper/RatingMapper.java,9/f/9f426c70913f7778eb675a15972bc825fe6c4ad3
 4
 mvnw,5/d/5d837c4ed85ecaaf932c506e80ff5d7b9f3d590d
 p
@@ -15,5 +9,3 @@ i
 9src/main/java/com/example/imdb/entities/TitleRatings.java,7/6/76eabc17b1bcf0fa3007f8e97504579902a6107e
 f
 6src/main/java/com/example/imdb/entities/TitleCrew.java,5/5/55c206236520bb45e242289d7786b94ef0c7d55c
-h
-8src/main/java/com/example/imdb/entities/TitleBasics.java,5/c/5c05a43f32d66832cf14ad2a0c0340a559910278
