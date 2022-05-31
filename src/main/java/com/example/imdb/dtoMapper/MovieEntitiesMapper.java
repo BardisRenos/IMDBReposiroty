@@ -18,14 +18,6 @@ public class MovieEntitiesMapper {
      * @return A MoviesEntitiesDTO object.
      */
 
-
-//    public static MoviesEntitiesDTO convertTitlePrincipalEntitiesToDTO(TitleBasics titleBasics){
-//
-//        ModelMapper modelMapper = new ModelMapper();
-//        return modelMapper.map(titleBasics, MoviesEntitiesDTO.class);
-//
-//    }
-
     public static List<MoviesEntitiesDTO> convertTitlePrincipalEntitiesToDTOs(List<TitleBasics> titleBasics){
 
         List<MoviesEntitiesDTO> moviesEntitiesDTOList = new ArrayList<>();

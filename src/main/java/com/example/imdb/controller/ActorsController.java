@@ -1,6 +1,6 @@
 package com.example.imdb.controller;
 
-import com.example.imdb.dal.ActorsRepository;
+import com.example.imdb.dao.ActorsRepository;
 import com.example.imdb.dto.TitleBasicDTO;
 import com.example.imdb.service.ActorService;
 import org.springframework.beans.factory.annotation.Autowired;

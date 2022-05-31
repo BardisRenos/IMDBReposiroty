@@ -1,6 +1,6 @@
 package com.example.imdb.service;
 
-import com.example.imdb.dal.MovieRepository;
+import com.example.imdb.dao.MovieRepository;
 import com.example.imdb.dto.MoviesEntitiesDTO;
 import com.example.imdb.dto.RatingDTO;
 import com.example.imdb.dtoMapper.MovieEntitiesMapper;

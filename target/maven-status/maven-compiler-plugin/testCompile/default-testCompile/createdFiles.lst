@@ -1,0 +1,4 @@
+com/example/imdb/ImdbApplicationTests.class
+com/example/imdb/serviceTest/MovieServiceTest.class
+com/example/imdb/config/ContainersEnvironmentTest.class
+com/example/imdb/containers/PostgresTestContainer.class

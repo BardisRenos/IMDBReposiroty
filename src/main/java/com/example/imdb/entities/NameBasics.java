@@ -1,5 +1,6 @@
 package com.example.imdb.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -32,6 +33,7 @@ public class NameBasics {
     @Column(name = "knownfortitles")
     private String knownForTitles;
 
+    @JsonIgnore
     @OneToMany
     @JoinTable(name = "title_principals",
             joinColumns = @JoinColumn(name = "nconst"),

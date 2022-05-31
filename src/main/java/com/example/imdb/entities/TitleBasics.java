@@ -1,5 +1,6 @@
 package com.example.imdb.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -10,7 +11,6 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "title_basics")
-@ToString
 public class TitleBasics {
 
     /**
@@ -37,12 +37,12 @@ public class TitleBasics {
     @Column(name = "genres")
     private String genres;
 
+    @JsonIgnore
     @ManyToMany
     @JoinTable(name = "title_principals",
             joinColumns = @JoinColumn(name = "tconst"),
             inverseJoinColumns = @JoinColumn(name = "nconst"))
     private List<NameBasics> people;
-
 
     @OneToOne
     @JoinColumn(name = "tconst")
