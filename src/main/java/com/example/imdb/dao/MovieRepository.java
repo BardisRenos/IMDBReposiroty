@@ -39,19 +39,14 @@ public class MovieRepository {
     }
 
     /**
-     * Retrieve a list of movies by a category and a year
-     * @param genre
-     * @param year
-     * @return
+     * Retrieve a list of movies by a category and a year.
+     * @param genre The genre of a movie.
+     * @param year The year of the movie.
+     * @return A list of TitleBasic object.
      */
     public List<TitleBasics> findMoviesByGenreAndByYear(String genre, int year) {
         return entityManager.createQuery("select p from TitleBasics p join fetch p.rating r " +
                 "where p.genres = :genre and p.startYear = :year order by r.numVotes/r.averageRating desc", TitleBasics.class)
                 .setParameter("genre", genre).setParameter("year", year).getResultList();
     }
-
-
-
-
-
 }

@@ -4,7 +4,6 @@ import com.example.imdb.dao.NameRepository;
 import com.example.imdb.dto.NameDTO;
 import com.example.imdb.dtoMapper.NameMapper;
 import com.example.imdb.entities.NameBasics;
-import com.example.imdb.entities.TitleBasics;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -80,8 +79,8 @@ public class NameService {
 
     private boolean checkTheActor(List<String> setOfActorNames, String targetActor) {
 
-        if (setOfActorNames.contains(targetActor)){
-            logger.info("found the actor from "+ sourceActor + "to the actor: "+ targetActor );
+        if (setOfActorNames.contains(targetActor)) {
+            logger.info("Found the actor from "+ sourceActor + "to the actor: "+ targetActor );
         }
         return setOfActorNames.contains(targetActor);
     }
