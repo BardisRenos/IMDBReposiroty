@@ -45,10 +45,10 @@ public class MovieService {
     }
 
     /**
-     *
-     * @param category
-     * @param year
-     * @return
+     * This method returns a list of movies with rating and category.
+     * @param category The category of the movie.
+     * @param year The year of the movie.
+     * @return A list of RatingDTO objects.
      */
     public List<RatingDTO> getMoviesByGenreAndByYear(String category, int year) {
         List<TitleBasics> res = movieRepository.findMoviesByGenreAndByYear(category, year);

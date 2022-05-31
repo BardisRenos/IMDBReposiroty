@@ -17,7 +17,6 @@ public class MovieEntitiesMapper {
      * @param titleBasics Is a TitleBasics object as parameter in order to be converted.
      * @return A MoviesEntitiesDTO object.
      */
-
     public static List<MoviesEntitiesDTO> convertTitlePrincipalEntitiesToDTOs(List<TitleBasics> titleBasics){
 
         List<MoviesEntitiesDTO> moviesEntitiesDTOList = new ArrayList<>();

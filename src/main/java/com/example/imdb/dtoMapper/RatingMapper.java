@@ -11,7 +11,7 @@ import java.util.List;
 public class RatingMapper {
 
     /**
-     * This method
+     * This method convert a list of titleBasics to a list of RatingDTO
      * @param titleBasics A list of TitleBasics objects.
      * @return A list of RatingDTOs.
      */
@@ -28,15 +28,5 @@ public class RatingMapper {
         }
 
         return list;
-    }
-
-    public static RatingDTO convertEntitiesToDTO(TitleBasics titleBasics){
-        RatingDTO ratingDTO = new RatingDTO();
-
-        ratingDTO.setRating((int) (titleBasics.getRating().getNumVotes()/titleBasics.getRating().getAverageRating()));
-        ratingDTO.setNameMovie(titleBasics.getPrimaryTitle());
-        ratingDTO.setCategory(titleBasics.getGenres());
-
-        return ratingDTO;
     }
 }
