@@ -4,12 +4,10 @@ In this repository will demostrate a Rest application with Java and Spring Boot 
 
 1. Java 11
 2. Spring Boot 
-3. Docker
+3. Docker & Docker Composer
 4. Postgres SQL database
 
 
-
 ### Creating the RestApi's 
-
 
 
